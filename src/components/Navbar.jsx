@@ -94,7 +94,7 @@ export const Navbar = () => {
           />
         </SearchInputBox>
       </Header>
-      {selectMovie && <MovieDiscription selectMovie={selectMovie} />}
+      {selectMovie && <MovieDiscription selectMovie={selectMovie} setSelectMovie={setSelectMovie}/>}
       <MovieList>
         {moviedata?.length
           ? moviedata.map((movie, index) => (
@@ -104,7 +104,7 @@ export const Navbar = () => {
                 setSelectMovie={setSelectMovie}
               />
             ))
-          : "No Movie Found"}
+          : "Type movie name in search box"}
       </MovieList>
     </Conatainer>
   );
