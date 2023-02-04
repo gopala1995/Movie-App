@@ -86,7 +86,7 @@ export const Navbar = () => {
       <Header>
         Movie
         <SearchInputBox>
-          <SearchIcon src="logo192.png" />
+          <SearchIcon src="icons8.png" />
           <SearchInput
             placeholder="Search Movie"
             value={Input}
