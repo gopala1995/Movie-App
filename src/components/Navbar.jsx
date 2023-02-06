@@ -78,7 +78,7 @@ export const Navbar = () => {
   const onTextchange = (ev) => {
     clearTimeout(time);
     setInput(ev.target.value);
-    const outtime = setTimeout(() => fetchApi(ev.target.value), 500);
+    const outtime = setTimeout(() => fetchApi(ev.target.value), 300);
     setTime(outtime);
   };
   return (
